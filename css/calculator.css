@@ -1,0 +1,31 @@
+
+/* css for * selector (universal selector) */
+*,*::before,*::after {box-sizing: border-box; font-family: ; font-weight: normal;}
+
+/*  css for background (body) */
+body{padding: 0; margin: 0; background: linear-gradient(to right,#00aaff,#00FF6C); }
+
+/* css for calculator box */
+.calculator-grid{display: grid; justify-content: center; align-content	: center; min-height: 100vh; grid-template-columns: repeat(4, 100px); grid-template-rows: minmax(120px, auto) repeat(5, 100px); }
+
+/* css for calc button */
+.calculator-grid > button{cursor: pointer; font-size: 2rem; border: 1px solid #fff; outline: none; background-color: rgba(255, 255, 255, .75); }
+.calculator-grid > button:hover{background-color: rgba(255, 255, 255, .9); }
+
+/* css for broad button */
+.s-two{grid-column: span 2;}
+
+/* css for output bar */
+.output{grid-column: 1 / -1; background-color: rgba(0, 0, 0, .75); display: flex; align-items: flex-end; justify-content: space-around; flex-direction: column; padding: 10px; word-wrap: break-word; word-break:break-all ; }
+
+/* css for first value we enter */
+.output .previous-operand{color: rgba(255, 255, 255, .75); font-size: 1.5rem; }
+
+/* css for second value we enter */
+.output .current-operand{color: white; font-size: 2.5rem;}
+
+
+
+
+
+
